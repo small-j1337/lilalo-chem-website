@@ -15,8 +15,8 @@
             <nav class = "links">
                 <ul>
                     <li><a href = "#">Home</a></li>
-                    <li><a href = "#" class = "units-link" id = "units-link">Units<span class = "units-dropdown-arrow">▾</span></a></li>
-                    <li><a href = "#" class = "blogs-link" id = "blogs-link">Research Blogs<span class = "blogs-dropdown-arrow">▾</span></a></li>
+                    <li><a href = "#" class = "units-link" id = "units-link">Units<span class = "units-dropdown-arrow" id = "units-dropdown-arrow">▾</span></a></li>
+                    <li><a href = "#" class = "blogs-link" id = "blogs-link">Research Blogs<span class = "blogs-dropdown-arrow" id = "units-dropdown-menu">▾</span></a></li>
                     <li><a href = "#">About the Creators</a></li>
                 </ul>
             </nav>
@@ -27,20 +27,27 @@
         </div>
 
         <script>
+            const unitsDropdownArrow = document.getElementById('units-dropdown-arrow');
             const unitsDropdownMenu = document.getElementById('units-dropdown-menu');
+            const blogsDropdownArrow = document.getElementById('blogs-dropdown-arrow');
+            const blogsDropdownMenu = document.getElementById('blogs-dropdown-menu');
+            
             document.getElementById("units-link").addEventListener("click", function() {
+                unitsDropdownArrow.classList.toggle('rotated');
                 unitsDropdownMenu.classList.toggle('show');
                 blogsDropdownMenu.classList.remove('show');
+                blogsDropdownArrow.classList.remove('rotated');
             });
         </script>
 
         <script>
-            const blogsDropdownMenu = document.getElementById('blogs-dropdown-menu');
             document.getElementById("blogs-link").addEventListener("click", function() {
                 blogsDropdownMenu.classList.toggle('show');
                 unitsDropdownMenu.classList.remove('show');
             });
         </script>
+
+
     </header>
 
     <!-- ITEMS UNIQUE TO THE HOMEPAGE-->
