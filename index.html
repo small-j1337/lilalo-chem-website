@@ -7,21 +7,43 @@
     <link rel = "stylesheet" href = "navbar.css">
     <link rel = "stylesheet" href = "text-styles.css">
 </head>
-<body style = "margin: 0; overflow-x: hidden; display: flex; flex-direction: column">
+<body style = "margin: 0; overflow-x: hidden; display: flex; flex-direction: column; position: relative">
+    <!-- NAVIGATION MENU, REUSE CODE FOR OTHER PAGES-->
     <header>
         <div class = "navbar">
             <h1 class = "website-name">LILALO Chemistry</h1>
             <nav class = "links">
                 <ul>
                     <li><a href = "#">Home</a></li>
-                    <li><a href = "#">Units</a></li>
-                    <li><a href = "#">Research Blogs</a></li>
+                    <li><a href = "#" class = "units-link" id = "units-link">Units</a></li>
+                    <li><a href = "#" class = "blogs-link" id = "blogs-link">Research Blogs</a></li>
                     <li><a href = "#">About the Creators</a></li>
                 </ul>
             </nav>
         </div>
+        <div class = "units-dropdown-menu" id = "units-dropdown-menu">
+        </div>
+        <div class = "blogs-dropdown-menu" id = "blogs-dropdown-menu">
+        </div>
+
+        <script>
+            const unitsDropdownMenu = document.getElementById('units-dropdown-menu');
+            document.getElementById("units-link").addEventListener("click", function() {
+                unitsDropdownMenu.classList.toggle('show');
+                blogsDropdownMenu.classList.remove('show');
+            });
+        </script>
+
+        <script>
+            const blogsDropdownMenu = document.getElementById('blogs-dropdown-menu');
+            document.getElementById("blogs-link").addEventListener("click", function() {
+                blogsDropdownMenu.classList.toggle('show');
+                unitsDropdownMenu.classList.remove('show');
+            });
+        </script>
     </header>
 
+    <!-- ITEMS UNIQUE TO THE HOMEPAGE-->
     <main>
         <style>
             .heroBanner{position: relative}
