@@ -44,7 +44,9 @@
     transform: translateY(-0.25vw);
 }
 .links ul{
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 1.5vw;
     display: flex;
     align-items: center;
 }
