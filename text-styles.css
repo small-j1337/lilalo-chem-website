@@ -1,0 +1,19 @@
+@font-face{
+    font-family: sf-pro;
+    src: url("fonts/SF-Pro-Text-Regular.otf");
+    font-weight: 400;
+}
+@font-face{
+    font-family: sf-pro;
+    src: url("fonts/SF-Pro-Text-Light.otf");
+    font-weight: 300;
+}
+@font-face{
+    font-family: sf-pro;
+    src: url("fonts/SF-Pro-Text-Semibold.otf");
+    font-weight: 500;
+}
+h1{margin: 0; font-family: sf-pro; font-weight: bold;font-size: 3vw;}
+h2{margin: 0; font-family: sf-pro; font-weight: bold;font-size: 2.5vw;}
+h3{margin: 0; font-family: sf-pro; font-weight: bold;font-size: 2vw;}
+p{margin: 0; font-family: sf-pro; font-weight: normal;font-size: 1.5vw;}
