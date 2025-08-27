@@ -13,7 +13,12 @@
     src: url("fonts/SF-Pro-Text-Semibold.otf");
     font-weight: 500;
 }
-h1{margin: 0; font-family: sf-pro; font-weight: bold;font-size: 3vw;}
-h2{margin: 0; font-family: sf-pro; font-weight: bold;font-size: 2.5vw;}
-h3{margin: 0; font-family: sf-pro; font-weight: bold;font-size: 2vw;}
-p{margin: 0; font-family: sf-pro; font-weight: normal;font-size: 1.5vw;}
+@font-face{
+    font-family: sf-pro;
+    src: url("fonts/SF-Pro-Display-Heavy.otf");
+    font-weight: 600;
+}
+h1{margin: 0; font-family: sf-pro; font-weight: 500;font-size: 3vw;}
+h2{margin: 0; font-family: sf-pro; font-weight: 500;font-size: 2.5vw;}
+h3{margin: 0; font-family: sf-pro; font-weight: 500;font-size: 2vw;}
+p{margin: 0; font-family: sf-pro; font-weight: 400;font-size: 1.5vw;}
