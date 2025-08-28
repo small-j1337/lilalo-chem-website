@@ -60,9 +60,10 @@
     transition: transform 0.1s linear;
     font-weight:500;
 }
-.links li:hover{
+.links a:hover, .links li:hover{
     cursor: pointer;
-    transform: translateY(-0.25vw);
+    transform: translateY(-0.1vw);
+    color: rgba(115, 0, 255, 0.8)
 }
 
 .links a{

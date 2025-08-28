@@ -33,33 +33,46 @@
             const blogsDropdownArrow = document.getElementById('blogs-dropdown-arrow');
             const blogsDropdownMenu = document.getElementById('blogs-dropdown-menu');
 
+            //change color of blogs link if it is active
+            if(blogsDropdownMenu.classList.contains("show")){
+    
+            }
+            //change color of units link if it is active
+            if(unitsDropdownMenu.classList.contains("show")){
+
+            }
+
+            //for clicking on the units dropdown
             document.getElementById("units-link").addEventListener("click", function() {
-                //if the blogs dropdown is active, remove all transitions
+                //if the blogs dropdown is active and I click on the units dropdown, remove all transitions
                 if(blogsDropdownMenu.classList.contains("show")){
                     blogsDropdownMenu.style.transition = "0s top linear";
                     unitsDropdownMenu.style.transition = "0s top linear";
                 }
+                //restore all transitions if I don't click on a dropdown while the other is active
                 else{
                     blogsDropdownMenu.style.transition = "1s top ease";
                     unitsDropdownMenu.style.transition = "1s top ease";
                 }
                 
+                //show the units dropdown
                 unitsDropdownArrow.classList.toggle('rotated');
                 unitsDropdownMenu.classList.toggle('show');
+                //hide the blogs dropdown
                 blogsDropdownMenu.classList.remove('show');
                 blogsDropdownArrow.classList.remove('rotated');
-
-                
             });
         </script>
 
         <script>
+            //for clicking on the blogs dropdown
             document.getElementById("blogs-link").addEventListener("click", function() {
-                //if the units dropdown is active, remove all transitions
+                //if I click on the dropdown while another is active, remove all transitions
                 if(unitsDropdownMenu.classList.contains("show")){
                     blogsDropdownMenu.style.transition = "top 0s linear";
                     unitsDropdownMenu.style.transition = "top 0s linear";
                 }
+                //restore all transitions if I don't click on a dropdown while another is active
                 else{
                     blogsDropdownMenu.style.transition = "1s top ease";
                     unitsDropdownMenu.style.transition = "1s top ease";
