@@ -34,25 +34,42 @@
             const blogsDropdownMenu = document.getElementById('blogs-dropdown-menu');
 
             document.getElementById("units-link").addEventListener("click", function() {
+                //if the blogs dropdown is active, remove all transitions
+                if(blogsDropdownMenu.classList.contains("show")){
+                    blogsDropdownMenu.style.transition = "0s top linear";
+                    unitsDropdownMenu.style.transition = "0s top linear";
+                }
+                else{
+                    blogsDropdownMenu.style.transition = "1s top ease";
+                    unitsDropdownMenu.style.transition = "1s top ease";
+                }
+                
                 unitsDropdownArrow.classList.toggle('rotated');
                 unitsDropdownMenu.classList.toggle('show');
-
-                //blogsDropdownMenu.style.transition = "top 0s linear";
                 blogsDropdownMenu.classList.remove('show');
                 blogsDropdownArrow.classList.remove('rotated');
-                //blogsDropdownMenu.style.transition = "top 1s ease";
+
+                
             });
         </script>
 
         <script>
             document.getElementById("blogs-link").addEventListener("click", function() {
+                //if the units dropdown is active, remove all transitions
+                if(unitsDropdownMenu.classList.contains("show")){
+                    blogsDropdownMenu.style.transition = "top 0s linear";
+                    unitsDropdownMenu.style.transition = "top 0s linear";
+                }
+                else{
+                    blogsDropdownMenu.style.transition = "1s top ease";
+                    unitsDropdownMenu.style.transition = "1s top ease";
+                }
+                
                 blogsDropdownMenu.classList.toggle('show');
                 blogsDropdownArrow.classList.toggle('rotated');
-
-                //unitsDropdownMenu.style.transition = "top 0s linear";
                 unitsDropdownMenu.classList.remove('show');
                 unitsDropdownArrow.classList.remove('rotated');
-                //unitsDropdownMenu.style.transition = "top 1s ease";
+
             });
         </script>
 
