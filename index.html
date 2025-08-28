@@ -6,6 +6,7 @@
     <title>LILALO Chemistry</title>
     <link rel = "stylesheet" href = "navbar.css">
     <link rel = "stylesheet" href = "text-styles.css">
+    <link rel="icon" type="image/x-icon" href="images/website-icon.png">
 </head>
 <body style = "margin: 0; overflow-x: hidden; display: flex; flex-direction: column; position: relative">
     <!-- NAVIGATION MENU, REUSE CODE FOR OTHER PAGES-->
@@ -35,8 +36,11 @@
             document.getElementById("units-link").addEventListener("click", function() {
                 unitsDropdownArrow.classList.toggle('rotated');
                 unitsDropdownMenu.classList.toggle('show');
+
+                //blogsDropdownMenu.style.transition = "top 0s linear";
                 blogsDropdownMenu.classList.remove('show');
                 blogsDropdownArrow.classList.remove('rotated');
+                //blogsDropdownMenu.style.transition = "top 1s ease";
             });
         </script>
 
@@ -44,8 +48,11 @@
             document.getElementById("blogs-link").addEventListener("click", function() {
                 blogsDropdownMenu.classList.toggle('show');
                 blogsDropdownArrow.classList.toggle('rotated');
+
+                //unitsDropdownMenu.style.transition = "top 0s linear";
                 unitsDropdownMenu.classList.remove('show');
                 unitsDropdownArrow.classList.remove('rotated');
+                //unitsDropdownMenu.style.transition = "top 1s ease";
             });
         </script>
 
