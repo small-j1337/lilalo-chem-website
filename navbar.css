@@ -63,7 +63,7 @@
 .links a:hover, .links li:hover{
     cursor: pointer;
     transform: translateY(-0.1vw);
-    color: rgba(115, 0, 255, 0.8)
+    color: rgba(115, 0, 255, 0.9)
 }
 
 .links a{
@@ -79,7 +79,7 @@
     transform: translateY(-100%);
     width: 100vw;
     height: 40vw;
-    background-color: rgba(51, 123, 230, 0.75);
+    background-color: rgba(51, 123, 230, 0.9);
     transition: top 1s ease;
 }
 .units-dropdown-menu.show{
@@ -94,7 +94,7 @@
     left: 0vw;
     width: 100vw;
     height: 40vw;
-    background-color: rgba(141, 44, 232, 0.75);
+    background-color: rgba(141, 44, 232, 0.9);
     transition: top 1s ease;
 }
 .blogs-dropdown-menu.show{
