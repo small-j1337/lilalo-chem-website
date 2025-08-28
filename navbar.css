@@ -75,7 +75,8 @@
 .units-dropdown-menu{
     position: fixed;
     z-index: 999;
-    top: -40vw;
+    top: 0vw;
+    transform: translateY(-100%);
     width: 100vw;
     height: 40vw;
     background-color: rgba(51, 123, 230, 0.75);
@@ -83,11 +84,14 @@
 }
 .units-dropdown-menu.show{
     top: 0;
+    transform: translateY(0);
 }
 .blogs-dropdown-menu{
     position: fixed;
     z-index: 999;
-    top: -40vw;
+    transform: translateY(-100%);
+    top: 0vw;
+    left: 0vw;
     width: 100vw;
     height: 40vw;
     background-color: rgba(141, 44, 232, 0.75);
@@ -95,6 +99,7 @@
 }
 .blogs-dropdown-menu.show{
     top: 0;
+    transform: translateY(0);
 }
 .blogs-dropdown-arrow{
     font-size: 2vw;

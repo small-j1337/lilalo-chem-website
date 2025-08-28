@@ -56,13 +56,13 @@
             document.getElementById("units-link").addEventListener("click", function() {
                 //if the blogs dropdown is active and I click on the units dropdown, remove all transitions
                 if(blogsDropdownMenu.classList.contains("show")){
-                    blogsDropdownMenu.style.transition = "0s top linear";
-                    unitsDropdownMenu.style.transition = "0s top linear";
+                    blogsDropdownMenu.style.transition = "0s transform linear";
+                    unitsDropdownMenu.style.transition = "0s transform linear";
                 }
                 //restore all transitions if I don't click on a dropdown while the other is active
                 else{
-                    blogsDropdownMenu.style.transition = "1s top ease";
-                    unitsDropdownMenu.style.transition = "1s top ease";
+                    blogsDropdownMenu.style.transition = "1s transform ease";
+                    unitsDropdownMenu.style.transition = "1s transform ease";
                 }
                 
                 //show the units dropdown
@@ -79,13 +79,13 @@
             document.getElementById("blogs-link").addEventListener("click", function() {
                 //if I click on the dropdown while another is active, remove all transitions
                 if(unitsDropdownMenu.classList.contains("show")){
-                    blogsDropdownMenu.style.transition = "top 0s linear";
-                    unitsDropdownMenu.style.transition = "top 0s linear";
+                    blogsDropdownMenu.style.transition = "transform 0s linear";
+                    unitsDropdownMenu.style.transition = "transform 0s linear";
                 }
                 //restore all transitions if I don't click on a dropdown while another is active
                 else{
-                    blogsDropdownMenu.style.transition = "1s top ease";
-                    unitsDropdownMenu.style.transition = "1s top ease";
+                    blogsDropdownMenu.style.transition = "1s transform ease";
+                    unitsDropdownMenu.style.transition = "1s transform ease";
                 }
                 
                 blogsDropdownMenu.classList.toggle('show');
