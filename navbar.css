@@ -145,7 +145,6 @@
     width: 65%;
     margin-top: 2vw;
     margin-bottom: 2vw;
-    border: 1px solid black;
     height: 75%;
     display: flex;
     justify-content: space-evenly;
@@ -156,16 +155,16 @@
     display: flex;
     align-items: flex-start;
     width: 22.5%;
-    border-radius: 0.25vw;
     transition: background-color 0.5s ease;
+    border-bottom: 0.1vw solid black;
 }
 .units-option:hover{
     background-color: rgba(249, 249, 249, 0.8);
     cursor: pointer;
 }
 .units-option img{width: 4vw; height: 4vw; margin: 1vw;}
-.units-option h3{margin-top: 1vw;}
-.units-option p{font-size: 1vw;}
+.units-option h3{margin-top: 1vw; text-decoration: underline;}
+.units-option p{font-size: 0.9vw;}
 
 
 
