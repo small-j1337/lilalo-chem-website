@@ -51,3 +51,7 @@ document.getElementById("blogs-link").addEventListener("click", function() {
     unitsDropdownArrow.classList.remove('rotated');
 
 });
+
+document.getElementById("hamburger-menu").addEventListener("click",function(){
+    document.getElementById("mobile-overlay").classList.toggle('show');
+});
