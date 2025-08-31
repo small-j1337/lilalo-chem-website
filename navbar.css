@@ -80,7 +80,7 @@
     .mobile-overlay{display: none; opacity: 0;}
     .mobile-overlay.show{display: flex; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.8);z-index: 1000; justify-content: center; align-items: center; opacity: 1;}
     .mobile-menu{width: 100%; font-weight: 600; color: white;list-style-type: none;display: flex; flex-direction: column; text-align: center;padding: 0;}
-    .mobile-menu li{padding: 5vw;border-top: 0.1vw solid white; border-bottom: 0.1vw solid white; font-size: 7.5vw; font-family: sf-pro; font-weight: 600;letter-spacing:0.25vw;}
+    .mobile-menu li{padding: 25px;border-top: 0.1vw solid white; border-bottom: 0.1vw solid white; font-size: 20px; font-family: sf-pro; font-weight: 600;letter-spacing:1px;text-align: center;}
 }
 
 
