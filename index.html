@@ -102,7 +102,10 @@
             }
         </style>
         <div class = "heroBanner">
-            <video autoplay muted loop playsinline class = "landing-page-animation">
+            <video autoplay muted loop playsinline class = "landing-page-animation" controls
+       controlsList="nodownload noremoteplayback"
+       disablepictureinpicture
+       oncontextmenu="return false;">
                 <source src="videos/landing-page-animation-1.mp4" type="video/mp4">
             </video>
             <div class = hero-banner-text>
