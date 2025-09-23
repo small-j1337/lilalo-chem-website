@@ -1,3 +1,85 @@
+function renderNavbar(){
+    return `      <div class = "navbar">
+            <h1 class = "website-name">LILALO Chemistry</h1>
+            <nav class = "links">
+                <ul>
+                    <li><a href = "#">Home</a></li>
+                    <li><a class = "units-link" id = "units-link">Units<span class = "units-dropdown-arrow" id = "units-dropdown-arrow">▾</span></a></li>
+                    <li><a class = "blogs-link" id = "blogs-link">Research Blogs<span class = "blogs-dropdown-arrow" id = "blogs-dropdown-arrow">▾</span></a></li>
+                    <li><a href = "#">About the Creators</a></li>
+                </ul>
+            </nav>
+            <img class = "hamburger-menu" id = "hamburger-menu" src = "images/Hexagon Menu Icon.png">
+        </div>
+        <div class = "units-dropdown-menu" id = "units-dropdown-menu">
+            <div class = "units-content">
+                <div class = "units-box-1">
+                    <h1>Units</h1>
+                    <p>List of all Chem H units. Current icons, colors & fonts are temporary.</p>
+                </div>
+                <div class = "units-box-2">
+                    <div class = "units-option">
+                        <img src = "images/placeholder.jpg">
+                        <h3>Unit 1<p>Foundations of Chemistry</p></h3>
+                    </div>
+                    <div class = "units-option">
+                        <img src = "images/placeholder.jpg">
+                        <h3>Unit 2<p>Atomic Structure</p></h3>
+                    </div>
+                    <div class = "units-option">
+                        <img src = "images/placeholder.jpg">
+                        <h3>Unit 3<p>Electronic Structure</p></h3>
+                    </div>
+                    <div class = "units-option">
+                        <img src = "images/placeholder.jpg">
+                        <h3>Unit 4<p>Chemical Bonding</p></h3>
+                    </div>
+                    <div class = "units-option">
+                        <img src = "images/placeholder.jpg">
+                        <h3>Unit 5<p>Chemical Reactions</p></h3>
+                    </div>
+                    <div class = "units-option">
+                        <img src = "images/placeholder.jpg">
+                        <h3>Unit 6<p>Stoichiometry</p></h3>
+                    </div>
+                    <div class = "units-option">
+                        <img src = "images/placeholder.jpg">
+                        <h3>Unit 7<p>Thermochemistry</p></h3>
+                    </div>
+                    <div class = "units-option">
+                        <img src = "images/placeholder.jpg">
+                        <h3>Unit 8<p>Equilibrium, Acid & Bases</p></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "blogs-dropdown-menu" id = "blogs-dropdown-menu">
+            <div class = "blogs-content">
+                <h3 style = "text-align: center; margin: 5vw;">Welcome to the animated dropdown navigation. This dropdown will have the menu for the research blogs, and will likely have cool illustrations for them. Stay Tuned!
+                </h3>
+
+            </div>
+        </div>
+
+
+        <!--Mobile Navigation-->
+        <div class = "mobile-overlay" id = "mobile-overlay">
+            <ul class = "mobile-menu">
+                <li>Home</li>
+                <li>Units</li>
+                <li>Research Blogs</li>
+                <li>About the Creators</li>
+            </ul>
+        </div>`
+}
+
+document.getElementById("header").innerHTML = renderNavbar();
+
+
+
+
+
+
 const unitsDropdownArrow = document.getElementById('units-dropdown-arrow');
 const unitsDropdownMenu = document.getElementById('units-dropdown-menu');
 const blogsDropdownArrow = document.getElementById('blogs-dropdown-arrow');
