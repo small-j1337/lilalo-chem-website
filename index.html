@@ -8,7 +8,7 @@
     <link rel = "stylesheet" href = "text-styles.css">
     <link rel="icon" type="image/x-icon" href="images/website-icon.png">
 </head>
-<body style = "margin: 0; overflow-x: hidden; display: flex; flex-direction: column; position: relative">
+<body style = "margin: 0; overflow-x: hidden; display: flex; flex-direction: column; position: relative; overscroll-behavior: none;">
     <!-- NAVIGATION MENU, REUSE CODE FOR OTHER PAGES-->
     <header id = "header">
         <script src = "navbar.js"></script>
@@ -20,7 +20,7 @@
             .heroBanner{position: relative}
             .landing-page-animation{width:100vw;}
             .hero-banner-text{position: absolute;top:100px; width: 100vw; color:white;opacity: 0.9; display: flex; flex-direction: column; align-items: center;}
-            .landing-page-title{font-size: clamp(30px, 6vw, 100px); font-weight:600; text-align: center;}
+            .landing-page-title{font-size: clamp(30px, 5vw, 70px); font-weight:600; text-align: center;}
             .landing-page-description{margin-left: 100px; margin-right: 100px; text-align: center;}
             @media(max-width: 770px){
                 .hero-banner-text{position: absolute;top:75px; width: 100vw; color:white;opacity: 0.9; display: flex; flex-direction: column; align-items: center;}
@@ -35,8 +35,8 @@
                 <source src="videos/landing-page-animation-1.mp4" type="video/mp4">
             </video>
             <div class = hero-banner-text>
-                <h1 class = "landing-page-title">Title Goes Here</h1>
-                <p class = "landing-page-description">Description Goes Here. 
+                <h1 class = "landing-page-title">Live Laugh Love Chemistry</h1>
+                <p class = "landing-page-description">Never struggle with high school chemistry ever again! 
                 </p>
             </div>
         </div>
