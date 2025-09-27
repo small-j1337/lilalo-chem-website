@@ -1,4 +1,4 @@
-@font-face{
+/*@font-face{
     font-family: sf-pro;
     src: url("fonts/SF-Pro-Text-Regular.otf");
     font-weight: 400;
@@ -18,16 +18,21 @@
     src: url("fonts/SF-Pro-Display-Heavy.otf");
     font-weight: 600;
 }
+    */
+@font-face{
+    font-family: inter;
+    src: url("/fonts/Inter.ttf");
+}
 
 
-h1{margin: 0; font-family: sf-pro; font-weight: 500;font-size: 35px;}
-h2{margin: 0; font-family: sf-pro; font-weight: 500;font-size: 30px;}
-h3{margin: 0; font-family: sf-pro; font-weight: 500;font-size: 25px;}
-p{margin: 0; font-family: sf-pro; font-weight: 400;font-size: 20px;}
+h1{margin: 0; font-family: inter; font-weight: 500;font-size: 35px;}
+h2{margin: 0; font-family: inter; font-weight: 500;font-size: 30px;}
+h3{margin: 0; font-family: inter; font-weight: 500;font-size: 25px;}
+p{margin: 0; font-family: inter; font-weight: 400;font-size: 20px;}
 
 @media(max-width: 770px){ /* Mobile Styling*/
-    h1{margin: 0; font-family: sf-pro; font-weight: 500;font-size: 70px;}
-    h2{margin: 0; font-family: sf-pro; font-weight: 500;font-size: 60px;}
-    h3{margin: 0; font-family: sf-pro; font-weight: 500;font-size: 50px;}
-    p{margin: 0; font-family: sf-pro; font-weight: 400;font-size: 40px;}
+    h1{margin: 0; font-family: inter; font-weight: 500;font-size: 70px;}
+    h2{margin: 0; font-family: inter; font-weight: 500;font-size: 60px;}
+    h3{margin: 0; font-family: inter; font-weight: 500;font-size: 50px;}
+    p{margin: 0; font-family: inter; font-weight: 400;font-size: 40px;}
 }
