@@ -3,13 +3,13 @@ function renderNavbar(){
             <h1 class = "website-name">LILALO Chemistry</h1>
             <nav class = "links">
                 <ul>
-                    <li><a href = "#">Home</a></li>
+                    <li><a href = "/">Home</a></li>
                     <li><a class = "units-link" id = "units-link">Units<span class = "units-dropdown-arrow" id = "units-dropdown-arrow">▾</span></a></li>
                     <li><a class = "blogs-link" id = "blogs-link">Research Blogs<span class = "blogs-dropdown-arrow" id = "blogs-dropdown-arrow">▾</span></a></li>
-                    <li><a href = "#">About the Creators</a></li>
+                    <li><a href = "/about-the-creators/">About the Creators</a></li>
                 </ul>
             </nav>
-            <img class = "hamburger-menu" id = "hamburger-menu" src = "images/Hexagon Menu Icon.png">
+            <img class = "hamburger-menu" id = "hamburger-menu" src = "/images/Hexagon Menu Icon.png">
         </div>
         <div class = "units-dropdown-menu" id = "units-dropdown-menu">
             <div class = "units-content">
@@ -19,35 +19,35 @@ function renderNavbar(){
                 </div>
                 <div class = "units-box-2">
                     <div class = "units-option">
-                        <img src = "images/placeholder.jpg">
+                        <img src = "/images/placeholder.jpg">
                         <h3>Unit 1<p>Foundations of Chemistry</p></h3>
                     </div>
                     <div class = "units-option">
-                        <img src = "images/placeholder.jpg">
+                        <img src = "/images/placeholder.jpg">
                         <h3>Unit 2<p>Atomic Structure</p></h3>
                     </div>
                     <div class = "units-option">
-                        <img src = "images/placeholder.jpg">
+                        <img src = "/images/placeholder.jpg">
                         <h3>Unit 3<p>Electronic Structure</p></h3>
                     </div>
                     <div class = "units-option">
-                        <img src = "images/placeholder.jpg">
+                        <img src = "/images/placeholder.jpg">
                         <h3>Unit 4<p>Chemical Bonding</p></h3>
                     </div>
                     <div class = "units-option">
-                        <img src = "images/placeholder.jpg">
+                        <img src = "/images/placeholder.jpg">
                         <h3>Unit 5<p>Chemical Reactions</p></h3>
                     </div>
                     <div class = "units-option">
-                        <img src = "images/placeholder.jpg">
+                        <img src = "/images/placeholder.jpg">
                         <h3>Unit 6<p>Stoichiometry</p></h3>
                     </div>
                     <div class = "units-option">
-                        <img src = "images/placeholder.jpg">
+                        <img src = "/images/placeholder.jpg">
                         <h3>Unit 7<p>Thermochemistry</p></h3>
                     </div>
                     <div class = "units-option">
-                        <img src = "images/placeholder.jpg">
+                        <img src = "/images/placeholder.jpg">
                         <h3>Unit 8<p>Equilibrium, Acid & Bases</p></h3>
                     </div>
                 </div>
@@ -65,10 +65,10 @@ function renderNavbar(){
         <!--Mobile Navigation-->
         <div class = "mobile-overlay" id = "mobile-overlay">
             <ul class = "mobile-menu">
-                <li>Home</li>
-                <li>Units</li>
-                <li>Research Blogs</li>
-                <li>About the Creators</li>
+                <li><a href = "/">Home</a></li>
+                <li><a>Units</a></li>
+                <li><a>Research Blogs</a></li>
+                <li><a href = "/about-the-creators/">About the Creators</a></li>
             </ul>
         </div>`
 }
