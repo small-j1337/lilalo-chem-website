@@ -65,10 +65,10 @@ function renderNavbar(){
         <!--Mobile Navigation-->
         <div class = "mobile-overlay" id = "mobile-overlay">
             <ul class = "mobile-menu">
-                <li><a href = "/">Home</a></li>
+                <li><a href = "../">Home</a></li>
                 <li><a>Units</a></li>
                 <li><a>Research Blogs</a></li>
-                <li><a href = "/about-the-creators/">About the Creators</a></li>
+                <li><a href = "../about-the-creators/">About the Creators</a></li>
             </ul>
         </div>`
 }
