@@ -18,38 +18,38 @@ function renderNavbar(){
                     <p>List of all Chem H units. Current icons, colors & fonts are temporary.</p>
                 </div>
                 <div class = "units-box-2">
-                    <div class = "units-option">
+                    <button class = "units-option" onclick = "location.assign('/units/unit-1/')">
                         <img src = "/images/placeholder.jpg">
                         <h3>Unit 1<p>Foundations of Chemistry</p></h3>
-                    </div>
-                    <div class = "units-option">
+                    </button>
+                    <button class = "units-option" onclick = "location.assign('/units/unit-2/')">
                         <img src = "/images/placeholder.jpg">
                         <h3>Unit 2<p>Atomic Structure</p></h3>
-                    </div>
-                    <div class = "units-option">
+                    </button>
+                    <button class = "units-option" onclick = "location.assign('/units/unit-3/')">
                         <img src = "/images/placeholder.jpg">
                         <h3>Unit 3<p>Electronic Structure</p></h3>
-                    </div>
-                    <div class = "units-option">
+                    </button>
+                    <button class = "units-option" onclick = "location.assign('/units/unit-4/')">
                         <img src = "/images/placeholder.jpg">
                         <h3>Unit 4<p>Chemical Bonding</p></h3>
-                    </div>
-                    <div class = "units-option">
+                    </button>
+                    <button class = "units-option" onclick = "location.assign('/units/unit-5/')">
                         <img src = "/images/placeholder.jpg">
                         <h3>Unit 5<p>Chemical Reactions</p></h3>
-                    </div>
-                    <div class = "units-option">
+                    </button>
+                    <button class = "units-option" onclick = "location.assign('/units/unit-6/')">
                         <img src = "/images/placeholder.jpg">
                         <h3>Unit 6<p>Stoichiometry</p></h3>
-                    </div>
-                    <div class = "units-option">
+                    </button>
+                    <button class = "units-option" onclick = "location.assign('/units/unit-7/')">
                         <img src = "/images/placeholder.jpg">
                         <h3>Unit 7<p>Thermochemistry</p></h3>
-                    </div>
-                    <div class = "units-option">
+                    </button>
+                    <button class = "units-option" onclick = "location.assign('/units/unit-8/')">
                         <img src = "/images/placeholder.jpg">
                         <h3>Unit 8<p>Equilibrium, Acid & Bases</p></h3>
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>
